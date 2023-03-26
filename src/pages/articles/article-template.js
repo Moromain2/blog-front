@@ -18,7 +18,7 @@ const ArticleTemplate = ({data}) => {
 }
 
 export const query = graphql`
-  query($slug: String!) {
+  query($slug: String) {
     allPrismicBlogPost(filter: {uid: {eq: $slug}}) {
       nodes {
         uid
